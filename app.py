@@ -2,10 +2,10 @@ import os
 import openai
 from PIL import Image
 import streamlit as st
-openai.api_key = os.environ.get('OpenAI_API_Key')
+openai.api_key = os.environ.get('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')
 
 st.set_page_config(
-    page_title="ChatGPT + DALL-E 2",
+    page_title="JDIH DPRD Batang Chat Bot",
     page_icon="✨",
     layout="centered",
     initial_sidebar_state="auto",
@@ -35,9 +35,7 @@ top_image = Image.open('static/banner_top.png')
 bottom_image = Image.open('static/banner_bottom.png')
 main_image = Image.open('static/main_banner.png')
 
-st.sidebar.image(top_image,use_column_width='auto')
-format_type = st.sidebar.selectbox('Choose your OpenAI magician 😉',["ChatGPT","DALL-E 2"])
-st.sidebar.image(bottom_image,use_column_width='auto')
+format_type = st.sidebar.selectbox('Choose your OpenAI magician',["Dari ChatGPT","DALL-E 2"])
 
 st.image(main_image,use_column_width='auto')
 st.title("📄 ChatGPT + DALL-E 🏜 Streamlit")
