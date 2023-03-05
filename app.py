@@ -2,7 +2,7 @@ import os
 import openai
 from PIL import Image
 import streamlit as st
-openai.api_key = os.environ.get('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')
+openai.api_key = os.environ.get('pass')
 
 st.set_page_config(
     page_title="JDIH DPRD Batang Chat Bot",
